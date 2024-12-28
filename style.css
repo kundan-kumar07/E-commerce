@@ -1,0 +1,237 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/**
+ * Navbar Styles
+ */
+.navbar{
+    display: flex;
+    background-color: #212529;
+    color: white;
+    padding: 20px 40px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    height: 50px;
+    align-items: center;
+}
+
+/**
+ * Cart Styles
+ */
+.cart{
+    position: relative;
+    margin-top: 20px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 7px;
+    height: 35px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.cartAmount{
+    position: absolute;
+    top: -15px;
+    right: -20px;
+    background-color: red;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+/**
+ * Shop Item Styles
+ */
+.item{
+    width: 220px;
+    border: 2px solid black;
+    border-radius: 4px;
+    height: 400px;
+}
+
+@media(max-width:1000px){
+    .item{
+        flex: 1 1 calc(50%-20px);
+    }
+}
+@media(max-width:500px){
+    .item{
+        flex: 1 1 100%;
+    }
+}
+
+.container-of-cards{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.shop{
+    width: 220px;
+    height: 500px;
+}
+.buttons{
+    display: flex;
+    gap: 6px;
+    font-size: 17px;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+}
+.details{
+    padding: 0px 10px;
+}
+h2{
+    margin-top: -7px;
+}
+.bi-plus-lg{
+    color: green;
+    cursor: pointer;
+}
+.bi-dash-lg{
+    color: red;
+    cursor: pointer;
+}
+.shop h1{
+    margin-top: 2px;
+}
+i{
+    cursor: pointer;
+}
+
+.text-center{
+    text-align: center;
+    margin: auto;
+}
+.Home-btn{
+    background-color: black;
+    color: white;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.bi-x-lg {
+    color: red;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/**
+ * Shopping Cart Styles
+ */
+.shopping-cart {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.cart-item {
+    position: relative;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+}
+
+.cart-buttons {
+    display: flex;
+    gap: 4px;
+}
+
+.cart-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#priceStyle{
+    font-weight: bold;
+}
+
+/**
+ * Total Bill and Clear Cart Section Styles
+ */
+.total-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+.total-section h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.totalAmount {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.clear-cart-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.clear-cart-btn:hover {
+    background-color: #c0392b;
+}
+
+/**
+ * Empty Cart Message Styles
+ */
+#label {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#label h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.Home-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.item:hover {
+    transform: scale(1.05);
+}
+.Home-btn:hover {
+    background-color: #2980b9;
+}
